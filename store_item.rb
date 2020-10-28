@@ -17,15 +17,15 @@ class Items
   
   attr_reader :item, :item_color, :item_price
 
-  def initialize(item, item_color, item_price)
-    @item = item
-    @item_color = item_color
-    @item_price = item_price
+  def initialize(item_description)
+    @item = item_description[:item]
+    @item_color = item_description[:item_color]
+    @item_price = item_description[:item_price]
   end
 
 end
 
-item_1 = Items.new("sword", "silver", 200)
+item_1 = Items.new(:item => "sword", :item_color => "silver", :item_price => 200)
 p "You can buy a #{item_1.item_color} #{item_1.item} for $#{item_1.item_price}."
 
 
