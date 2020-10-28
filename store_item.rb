@@ -15,20 +15,12 @@
 
 class Items
   
+  attr_reader :item, :item_color, :item_price
+
   def initialize(item, item_color, item_price)
     @item = item
     @item_color = item_color
     @item_price = item_price
-  end
-
-  def item
-    @item
-  end
-  def item_color
-    @item_color
-  end
-  def item_price
-    @item_price
   end
 
 end
