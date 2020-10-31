@@ -55,7 +55,7 @@ class Manager < Employee
     index = 0
     while index < employees.length
       p employees[index].active == false
-      index += 1
+      index 
     end
   end
 
@@ -66,4 +66,3 @@ manager.print_info
 manager.send_report
 
 manager.give_all_raise
-manager.fire_all_employees
